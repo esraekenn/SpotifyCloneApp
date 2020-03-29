@@ -1,4 +1,4 @@
-package com.example.spotifycloneapp.data
+package com.example.spotifycloneapp.data.model
 
 data class Radio(
     val band: String?,
