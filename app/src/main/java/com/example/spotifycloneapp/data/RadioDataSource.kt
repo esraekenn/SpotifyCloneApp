@@ -6,7 +6,7 @@ import io.reactivex.Scheduler
 import io.reactivex.schedulers.Schedulers
 import java.util.*
 
-class RadioDataSources
+class RadioDataSource
 {
  val radioServiceProvider=RadioServiceProvider()
 
