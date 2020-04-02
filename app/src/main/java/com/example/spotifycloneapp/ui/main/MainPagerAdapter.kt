@@ -6,7 +6,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 import com.example.spotifycloneapp.R
 import com.example.spotifycloneapp.ui.favorites.FavoriteFragment
-import com.example.spotifycloneapp.ui.radios.RadioFragment
+import com.example.spotifycloneapp.ui.radios.RadiosFragment
 
 class MainPagerAdapter(context: Context, fm: FragmentManager, behavior: Int) :
     FragmentStatePagerAdapter(fm, behavior) {
@@ -15,7 +15,7 @@ class MainPagerAdapter(context: Context, fm: FragmentManager, behavior: Int) :
 
     override fun getItem(position: Int): Fragment {
         return when (position) {
-            POSITION_RADIOS -> RadioFragment()
+            POSITION_RADIOS -> RadiosFragment()
             POSITION_FAVORITES -> FavoriteFragment()
             else -> throw IllegalStateException("Undefined position $position. Max count is $TAB_COUNT")
         }
